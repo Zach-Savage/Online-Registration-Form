@@ -43,6 +43,7 @@
 
 					<label>State</label>
 					<select id="states">
+						<option value="" disabled selected>Select Province</option>
 						<option>Gauteng</option>
 						<option>Limpopo</option>
 						<option>Mpumalanga</option>
@@ -54,7 +55,7 @@
 						<option>Eastern Cape</option>
 					</select>
 
-				   <label for="zip">ZIP</label>
+				   <label for="zip">Zip Code</label>
 				   <input type="text" id="zip">
 
 			</fieldset>
@@ -64,34 +65,34 @@
 			<fieldset class="newsletter field">
 
 				<legend>Newsletter</legend>
-					<p>Select the newsletters you would like to receive</p>
+					<p class='news-p'>Select the newsletters you would like to receive</p>
 
 					<input type="checkbox" id='html-news'>
-						<label for="html-news">HTML News</label>
+						<label for="html-news">HTML News</label> <br>
 					<input type="checkbox" id='css-news'>
-						<label for="css-news">CSS News</label>
+						<label for="css-news">CSS News</label> <br>
 					<input type="checkbox" id='js-news'>
 						<label for="js-news">JavaScript News</label>
 
-					<p>Newsletter format</p>
+					<p class='news-p'>Newsletter format</p>
 					
 					<input type="radio" id='html-format' name='format'>
-						<label for='html-format'>HTML</label>
+						<label for='html-format'>HTML</label> <br>
 					<input type="radio" id="plain-text" name='format'>
 						<label for="plain-text">Plain Text</label>
 
-					<p>Other topics you'd like to hear about</p>
+					<p class='news-p'>Other topics you'd like to hear about</p>
 
 					<textarea></textarea>
 
 					<button type="submit" id="submit">
-						<label for="submit">Submit</label>
+						<label for="submit">Sign Up</label>
 
 			</fieldset>		
 		</div>
 
 	<footer>
-		<p>copyright the code review &copy;</p>
+		<p>Copyright The Code Review &copy;</p>
 	</footer>	
 
 </body>
