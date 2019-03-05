@@ -7,11 +7,12 @@
 	<title>Online Registration Form</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/styles.css">
+	<link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700" rel="stylesheet">
 </head>
 
 <body>
 
-	<div>
+	<div class="header">
 		<h1>THE CODE REVIEW</h1>
 
 		<h2>Signup for our newsletter</h2>
@@ -21,66 +22,77 @@
 
 	<form method="post">
 
-		<div>
-			<h2>Contact Information</h2>
-				<label for="name">Full Name</label>
-				<input type="text" id="name">
+		<div class="contact-div">
+			<fieldset class="contact field">
 
-				<label for="email">Email Address</label>
-				<input type="text" id="email">
+				<legend>Contact Information</legend>
+					<label for="name">Full Name</label>
+					<input type="text" id="name" placeholder="Required">
 
-				<label for="phone">Phone Number</label>
-				<input type="text" id="phone">
+					<label for="email">Email Address</label>
+					<input type="text" id="email" placeholder="Required">
 
-				<label for="street">Street Address</label>
-				<input type="text" id="street">
+					<label for="phone">Phone Number</label>
+					<input type="text" id="phone">
 
-				<label for="city">City</label>
-				<input type="text" id="city">
+					<label for="street">Street Address</label>
+					<input type="text" id="street">
 
-				<label>State</label>
-				<select id="states">
-					<option>Gauteng</option>
-					<option>Limpopo</option>
-					<option>Mpumalanga</option>
-					<option>Kwazulu Natal</option>
-					<option>North West</option>
-					<option>Free State</option>
-					<option>Northern Cape</option>
-					<option>Western Cape</option>
-					<option>Eastern Cape</option>
-				</select>
+					<label for="city">City</label>
+					<input type="text" id="city">
 
-			   <label for="zip">ZIP</label>
-			   <input type="text" id="zip">
+					<label>State</label>
+					<select id="states">
+						<option>Gauteng</option>
+						<option>Limpopo</option>
+						<option>Mpumalanga</option>
+						<option>Kwazulu Natal</option>
+						<option>North West</option>
+						<option>Free State</option>
+						<option>Northern Cape</option>
+						<option>Western Cape</option>
+						<option>Eastern Cape</option>
+					</select>
+
+				   <label for="zip">ZIP</label>
+				   <input type="text" id="zip">
+
+			</fieldset>
 		</div>
 
 		<div>
-			<h2>Newsletter</h2>
-				<p>Select the newsletters you would like to receive</p>
+			<fieldset class="newsletter field">
 
-				<input type="checkbox" id='html-news'>
-					<label for="html-news">HTML News</label>
-				<input type="checkbox" id='css-news'>
-					<label for="css-news">CSS News</label>
-				<input type="checkbox" id='js-news'>
-					<label for="js-news">JavaScript News</label>
+				<legend>Newsletter</legend>
+					<p>Select the newsletters you would like to receive</p>
 
-				<p>Newsletter format</p>
-				
-				<input type="radio" id='html-format' name='format'>
-					<label for='html-format'>HTML</label>
-				<input type="radio" id="plain-text" name='format'>
-					<label for="plain-text">Plain Text</label>
+					<input type="checkbox" id='html-news'>
+						<label for="html-news">HTML News</label>
+					<input type="checkbox" id='css-news'>
+						<label for="css-news">CSS News</label>
+					<input type="checkbox" id='js-news'>
+						<label for="js-news">JavaScript News</label>
 
-				<p>Other topics you'd like to hear about</p>
+					<p>Newsletter format</p>
+					
+					<input type="radio" id='html-format' name='format'>
+						<label for='html-format'>HTML</label>
+					<input type="radio" id="plain-text" name='format'>
+						<label for="plain-text">Plain Text</label>
 
-				<textarea></textarea>
+					<p>Other topics you'd like to hear about</p>
 
-				<button type="submit" id="submit">
-					<label for="submit">Submit</label>
+					<textarea></textarea>
 
+					<button type="submit" id="submit">
+						<label for="submit">Submit</label>
+
+			</fieldset>		
 		</div>
+
+	<footer>
+		<p>copyright the code review &copy;</p>
+	</footer>	
 
 </body>
 
