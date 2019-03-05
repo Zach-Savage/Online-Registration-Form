@@ -1,0 +1,87 @@
+
+body {
+	font-family: 'Lora', serif;
+}
+
+
+
+.header {
+	text-align: center;
+	border-bottom: solid 4px #1d3232 ;
+	padding-bottom: 15px;
+}
+
+.header h1 {
+	width: 100%;
+	font-size: 1.1em;
+	margin: -15px;
+	color: white;
+	background-color: #1d3232;
+	padding: 15px;
+}
+
+.header h1,
+.header h2 {
+	padding-top: 20px;
+}
+
+.header h2 {
+	font-size: 1.1em;
+	color: #1d3232;
+}
+
+.header p {
+	font-size: 0.8em;
+	color: #8d9f9f;
+}
+
+.contact-div {
+	margin-top: 5px;
+	border-top: solid 1px #1d3232;
+}
+
+div .field {
+	border-style: none;
+	padding-top: 15px;
+}
+
+div .contact {
+	margin-top: 5px;
+}
+
+div .contact legend {
+	font-size: 1.2em;
+	padding-top: 25px;
+	padding-bottom: 10px;
+	font-weight: bold;
+	color: #1d3232;
+
+}
+
+
+label {
+	display: block;
+	color: #677f7f;	
+}
+
+input[type='text'] {
+	width: 100%;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	border: none;
+	border-radius: 5px;
+	background-color: #ecefef;
+	padding: 12px 0 12px 10px;
+}
+
+input[type='text']::placeholder {
+	text-align: right;
+	padding-right: 15px;
+	font-style: italic; 
+	color: #b3bfbf;
+}
+
+input[type="text"]:focus {
+	outline: none;
+	border: 1px solid #074d8d;
+}
