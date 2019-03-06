@@ -164,12 +164,56 @@ button:active {
 	color: black;
 }
 
-
-
-
-
 footer {
 	text-align: center;
 	color: #8d9f9f;
 	font-style: italic;
+}
+
+
+
+@media (min-width: 768px) {
+
+
+	.header h1 {
+		position: absolute;
+		left:0;
+	}
+
+	body {
+		width: 60%;
+		margin: auto;
+	}
+
+	.header h2 {
+		padding-top: 58px;
+	} 
+
+	.form-inline { 
+ 	   display: flex;
+ 	   flex-flow: row wrap;
+ 	   align-content: : flex-end;
+ 	   flex-direction: column;
+ 	   align-items: stretch;
+ 	   justify-content: flex-end;
+	}
+
+	.form-inline label {
+		margin: 5px 10px 5px 0;
+	}
+
+	.form-inline input,
+	.form-inline select {
+		width: 70%;
+	    vertical-align: middle;
+	    margin-left: 30%;
+	    margin-top: -5%;
+	}
+
+	.form-inline input[type="checkbox"],
+	.form-inline input[type="radio"] {
+			width: initial;
+			margin: 0;
+	}
+
 }
