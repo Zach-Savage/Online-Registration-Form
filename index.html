@@ -27,36 +27,36 @@
 
 				<legend>Contact Information</legend>
 					<label for="name">Full Name</label>
-					<input type="text" id="name" placeholder="Required">
+					<input type="text" id="name" name="user_name" placeholder="Required">
 
 					<label for="email">Email Address</label>
-					<input type="text" id="email" placeholder="Required">
+					<input type="text" id="email" id="user_email" placeholder="Required">
 
 					<label for="phone">Phone Number</label>
-					<input type="text" id="phone">
+					<input type="text" id="phone" name="user_phone">
 
 					<label for="street">Street Address</label>
-					<input type="text" id="street">
+					<input type="text" id="street" name="user_address">
 
 					<label for="city">City</label>
-					<input type="text" id="city">
+					<input type="text" id="city" name="user_city">
 
-					<label>State</label>
-					<select id="states">
+					<label>Province</label>
+					<select id="states" name="user_province">
 						<option value="" disabled selected>Select Province</option>
-						<option>Gauteng</option>
-						<option>Limpopo</option>
-						<option>Mpumalanga</option>
-						<option>Kwazulu Natal</option>
-						<option>North West</option>
-						<option>Free State</option>
-						<option>Northern Cape</option>
-						<option>Western Cape</option>
-						<option>Eastern Cape</option>
+						<option name="selected_prvince" value="gauteng">Gauteng</option>
+						<option name="selected_prvince" value="limpopo">Limpopo</option>
+						<option name="selected_prvince" value="mpumalanga">Mpumalanga</option>
+						<option name="selected_prvince" value="kwazulu">Kwazulu Natal</option>
+						<option name="selected_prvince" value="north_west">North West</option>
+						<option name="selected_prvince" value="free_state">Free State</option>
+						<option name="selected_prvince" value="northern_cape">Northern Cape</option>
+						<option name="selected_prvince" value="western_cape">Western Cape</option>
+						<option name="selected_prvince" value="eastern_cape">Eastern Cape</option>
 					</select>
 
 				   <label for="zip">Zip Code</label>
-				   <input type="text" id="zip">
+				   <input type="text" id="zip" name="user_zip">
 
 			</fieldset>
 		</div>
@@ -67,23 +67,23 @@
 				<legend>Newsletter</legend>
 					<p class='news-p'>Select the newsletters you would like to receive</p>
 
-					<input type="checkbox" id='html-news'>
+					<input type="checkbox" id='html-news' name="html_news">
 						<label for="html-news">HTML News</label> <br>
-					<input type="checkbox" id='css-news'>
+					<input type="checkbox" id='css-news' name="css_news">
 						<label for="css-news">CSS News</label> <br>
-					<input type="checkbox" id='js-news'>
+					<input type="checkbox" id='js-news' name="js_news">
 						<label for="js-news">JavaScript News</label>
 
 					<p class='news-p'>Newsletter format</p>
 					
-					<input type="radio" id='html-format' name='format'>
+					<input type="radio" id='html-format' name='user_format' value="html">
 						<label for='html-format'>HTML</label> <br>
-					<input type="radio" id="plain-text" name='format'>
+					<input type="radio" id="plain-text" name='user_format' value="plain_text">
 						<label for="plain-text">Plain Text</label>
 
 					<p class='news-p'>Other topics you'd like to hear about</p>
 
-					<textarea></textarea>
+					<textarea id="textarea" name='textarea'></textarea>
 
 					<button type="submit" id="submit">
 						<label for="submit">Sign Up</label>
