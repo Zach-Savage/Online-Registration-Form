@@ -70,6 +70,8 @@ label {
 }
 
 input[type='text'],
+input[type='email'],
+input[type='tel'],
 select {
 	width: 100%;
 	margin-top: 10px;
@@ -80,7 +82,8 @@ select {
 	padding: 12px 0 12px 10px;
 }
 
-input[type='text']::placeholder {
+input[type='text']::placeholder,
+input[type='email']::placeholder {
 	text-align: right;
 	padding-right: 15px;
 	font-style: italic; 
